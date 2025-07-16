@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  flight-reservation-system:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: concurrent-flight-reservation
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./LOG.txt:/app/LOG.txt
+    environment:
+      - JAVA_OPTS=-Xmx512m -Xms256m
