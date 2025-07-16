@@ -10,7 +10,6 @@ java {
 }
 
 application {
-    // Cambiá esto si tu clase Main está en un paquete
     mainClass = 'Main'
 }
 
